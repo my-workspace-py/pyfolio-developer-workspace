@@ -1,0 +1,6 @@
+{
+  "name": "SrinivasKalyan Buthkur Portfolio",
+  "description": "Interactive developer portfolio, RAG interviewer chatbot, and Unix terminal emulator for SrinivasKalyan Buthkur, Senior Polyglot Backend Engineer and Automation Specialist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

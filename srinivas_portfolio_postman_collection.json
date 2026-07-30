@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "26feae7d-c646-41d2-8ed6-88ec7b14729a",
+		"name": "Srinivas Portfolio RAG API",
+		"description": "API collection to interact with SrinivasKalyan Buthkur's Portfolio RAG backend. Serves offline retrieval-augmented generation queries regarding resume facts, Python stack expertise, and automation workflows.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Submit Query to RAG Chatbot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"What is your Python experience and what awards did you win?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/chat",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"chat"
+					]
+				},
+				"description": "Sends a user query to the portfolio's high-fidelity offline RAG database and retrieves tailored, formatted resume facts."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
